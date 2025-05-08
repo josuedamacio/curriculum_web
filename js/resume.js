@@ -1,4 +1,41 @@
 (function($) {
+  "use strict";
+
+  // Smooth scrolling
+  $('a.js-scroll-trigger[href*="#"]:not([href="#"])').on('click', function(e) {
+    const pathnameMatch = location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '');
+    const hostnameMatch = location.hostname === this.hostname;
+
+    if (pathnameMatch && hostnameMatch) {
+      let target = $(this.hash);
+      target = target.length ? target : $(`[name=${this.hash.slice(1)}]`);
+
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000, 'easeInOutExpo');
+
+        e.preventDefault();
+      }
+    }
+  });
+
+  // Close responsive menu on link click
+  $('.js-scroll-trigger').on('click', function() {
+    $('.navbar-collapse').collapse('hide');
+  });
+
+  // Activate scrollspy
+  $('body').scrollspy({
+    target: '#sideNav'
+  });
+
+})(jQuery);
+
+
+/** Mismo codigo pero menos legible
+ * 
+ * (function($) {
   "use strict"; // Start of use strict
 
   // Smooth scrolling using jQuery easing
@@ -26,3 +63,5 @@
   });
 
 })(jQuery); // End of use strict
+
+ */

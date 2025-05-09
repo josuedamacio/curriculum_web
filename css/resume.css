@@ -82,31 +82,20 @@ p.lead {
 .dev-icons .list-inline-item i:hover {
   color: #a53853;
 }
-
-
-.titulo-it{
-  width: 480px;
+.titulo-it {
+  width: 300px;
 }
-.titulos-it{
+.titulos-it {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   gap: 28px;
-  }
-
-  @media (min-width: 1120px){
-    .titulos-it{
-      display: flex;
-      flex-direction: row;
-    }
-  }
-
+}
 #sideNav .navbar-nav .nav-item .nav-link {
   font-weight: 800;
   letter-spacing: 0.05rem;
   text-transform: uppercase;
 }
-
 #sideNav .navbar-toggler:focus {
   outline-color: #d48a6e;
 }
@@ -127,6 +116,7 @@ p.lead {
     width: 17rem;
     height: 100vh;
   }
+
   #sideNav .navbar-brand {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -134,11 +124,13 @@ p.lead {
     margin: auto auto 0;
     padding: 0.5rem;
   }
+
   #sideNav .navbar-brand .img-profile {
     max-width: 10rem;
     max-height: 10rem;
     border: 0.5rem solid rgba(255, 255, 255, 0.2);
   }
+
   #sideNav .navbar-collapse {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -152,6 +144,7 @@ p.lead {
     width: 100%;
     margin-bottom: auto;
   }
+
   #sideNav .navbar-collapse .navbar-nav {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -159,9 +152,11 @@ p.lead {
     flex-direction: column;
     width: 100%;
   }
+
   #sideNav .navbar-collapse .navbar-nav .nav-item {
     display: block;
   }
+
   #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
     display: block;
   }
@@ -181,22 +176,29 @@ section.resume-section .resume-item .resume-date {
   section.resume-section {
     min-height: 100vh;
   }
+
   section.resume-section .resume-item .resume-date {
     min-width: 18rem;
   }
-
 }
-
 @media (min-width: 992px) {
   section.resume-section {
     padding-top: 3rem !important;
     padding-bottom: 3rem !important;
 
   }
+
+  .titulos-it {
+    display: flex;
+    flex-direction: row;
+  }
+  .titulo-it {
+    width: 490px;
+  }
+
 }
+
 /*Color principal del sidebar*/
-
-
 /*codigo de josue damacio*/
 .bg-primary {
   background-color: #446892 !important;
@@ -210,10 +212,12 @@ a {
   color: #a53853;
 }
 
-a:hover, a:focus, a:active {
+a:hover,
+a:focus,
+a:active {
   color: #824027;
 }
 
-body{
+body {
   background-color: #f7f3ee;
 }

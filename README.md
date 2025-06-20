@@ -1,4 +1,4 @@
-[Link](https://josuedamacio.github.io/curriculum_web/)
+# [Link](https://josuedamacio.github.io/curriculum_web/)
 
 # curriculum_web
 

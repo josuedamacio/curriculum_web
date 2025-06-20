@@ -1,3 +1,5 @@
+[Link](https://josuedamacio.github.io/curriculum_web/)
+
 # curriculum_web
 
 0.2
